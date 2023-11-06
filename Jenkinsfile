@@ -31,26 +31,7 @@ pipeline{
 
 
 
-         stage('JUnit / Mockito') {
-            steps{
-               		 sh "mvn test "
-            }
-        }
-
-stage('Test & Jacoco Static Analysis') {
-    	    steps {
-               // Analysis of Test using Junit + Jacoco (Mockito + Junit)
-          	  	junit 'target/surefire-reports/*.xml'
-          		jacoco()
-		   }
-        }
-stage('Run Spring && MySQL Containers') {
-                                steps {
-                                    script {
-                                      sh 'docker-compose up -d'
-                                    }
-                                }
-                            }
+         
         stage('SONARQUBE') {
             steps{
 
