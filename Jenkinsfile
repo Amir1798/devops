@@ -31,11 +31,7 @@ pipeline{
 
 
 
-<<<<<<< HEAD
 
-=======
-         
->>>>>>> 2a8c49ea57e5a14a10ad0cd942dd570bad406811
         stage('SONARQUBE') {
             steps{
 
@@ -55,9 +51,4 @@ pipeline{
         }
 
     }
-<<<<<<< HEAD
 }
-=======
-}
-
->>>>>>> 2a8c49ea57e5a14a10ad0cd942dd570bad406811
