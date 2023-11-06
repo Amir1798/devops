@@ -70,12 +70,21 @@
     </dependencies>
     <!-- Deploy to Nexus -->
     <distributionManagement>
+<<<<<<< HEAD
         <repository>
             <id>deploymentRepo</id>
             <name>Nexus Repository</name>
             <url>http://localhost:8081/repository/maven-releases/</url>
         </repository>
     </distributionManagement>
+=======
+<repository>
+<id>deploymentRepo</id>
+<name>Nexus Repository</name>
+<url>http://localhost:8081/repository/maven-releases/</url>
+</repository>
+</distributionManagement>
+>>>>>>> 2a8c49ea57e5a14a10ad0cd942dd570bad406811
     <build>
         <plugins>
             <plugin>
